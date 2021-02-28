@@ -1,0 +1,48 @@
+@media screen and (min-width: 800px) {
+  body {
+    background: url(/images/bg-desktop.svg), hsl(257, 40%, 49%);
+  }
+  .container {
+    margin: 2em 4em 0em 3em;
+    display: grid;
+    grid-template-columns: minmax(250px, 1.2fr) 1fr;
+    grid-template-rows: 0.2fr 1fr auto;
+    gap: 0 3em;
+    grid-template-areas:
+      'header header'
+      'illustration section'
+      'footer footer';
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+  h2 {
+    margin-top: 20px;
+    font-size: 3vw;
+  }
+
+  .header {
+    margin-bottom: 2rem;
+  }
+  .description {
+    text-align: start;
+  }
+
+  .description p {
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  .button {
+    font-size: 14px;
+    padding: 0.8em 3em;
+  }
+
+  footer {
+    margin: 0;
+  }
+  .social {
+    justify-content: flex-end;
+  }
+}

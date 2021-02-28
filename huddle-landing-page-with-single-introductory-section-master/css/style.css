@@ -1,0 +1,123 @@
+/* import google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+/* GENERAL STYLE */
+
+:root {
+  /* Violet: hsl(257, 40%, 49%)
+    Soft Magenta: hsl(300, 69%, 71%) */
+  --violet: hsl(257, 40%, 49%);
+  --magneta: hsl(300, 69%, 71%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+body {
+  font-family: 'Open Sans';
+  font-size: 16px;
+  color: #fff;
+  background: url(/images/bg-mobile.svg), hsl(257, 40%, 49%);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1,
+h2 {
+  font-family: 'Poppins';
+}
+
+/* CONTAINER CSS */
+.container {
+  margin: 2em;
+  gap: 3em;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.2fr 0.4fr 0.4fr 0.2fr;
+  grid-template-areas:
+    'header'
+    'illustration'
+    'section'
+    'footer';
+}
+
+/* HEADER CSS */
+.header {
+  grid-area: header;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 0.7em;
+}
+
+/* IMAGE SECTION CSS */
+.illustration {
+  grid-area: illustration;
+}
+
+.illustration img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* DESCRIPTION CSS */
+.description {
+  grid-area: section;
+  text-align: center;
+  padding: 0.2em;
+}
+
+.description p {
+  padding: 1em 0;
+  line-height: 1.5em;
+}
+
+.button {
+  font-family: 'Poppins';
+  font-size: 0.8em;
+  text-align: center;
+  padding: 0.8em 5em;
+  border-radius: 2em;
+  color: var(--violet);
+  border: none;
+  margin-top: 1em;
+  transition: all 0.3s ease 0s;
+}
+
+.button:hover {
+  color: #fff;
+  background-color: var(--magneta);
+  cursor: pointer;
+}
+
+/* FOOTER CSS */
+footer {
+  grid-area: footer;
+  margin-top: 1rem;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+}
+
+.social i {
+  padding: 0.5em;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  margin: 0 0.5rem;
+  transition: all 0.3s ease 0s;
+  line-height: 0.8em;
+}
+
+.social i:hover {
+  color: var(--magneta);
+  border-color: var(--magneta);
+  cursor: pointer;
+  filter: brightness(85%);
+}
