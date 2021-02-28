@@ -75,6 +75,9 @@ h2 {
 .description p {
   padding: 1em 0;
   line-height: 1.5em;
+  opacity: 0.8;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .button {
@@ -104,6 +107,7 @@ footer {
 .social {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .social i {
