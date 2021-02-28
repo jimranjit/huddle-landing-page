@@ -121,3 +121,13 @@ footer {
   cursor: pointer;
   filter: brightness(85%);
 }
+
+.attribution {
+  font-size: 11px;
+  text-align: start;
+}
+
+.attribution a {
+  color: var(--magneta);
+  text-decoration: none;
+}
